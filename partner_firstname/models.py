@@ -43,8 +43,10 @@ class ResPartner(models.Model):
         """Add inverted names at creation if unavailable."""
         context = dict(self.env.context)
         name = vals.get("name", context.get("default_name"))
+        
+        _logger.info("Fristname create: %s", vals)
 
-        if name is not None:
+        if name is not None and not vals.get('lastname') or vals.get('firstname'):
             # Calculate the splitted fields
             inverted = self._get_inverse_name(
                 self._get_whitespace_cleaned_name(name),
