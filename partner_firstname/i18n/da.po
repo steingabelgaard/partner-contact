@@ -26,7 +26,7 @@ msgstr ""
 #. module: partner_firstname
 #: field:res.partner,firstname:0
 msgid "First name"
-msgstr ""
+msgstr "Fornavn"
 
 #. module: partner_firstname
 #: view:res.partner:partner_firstname.view_partner_form_firstname
@@ -36,7 +36,7 @@ msgstr "Er et firma?"
 #. module: partner_firstname
 #: field:res.partner,lastname:0
 msgid "Last name"
-msgstr ""
+msgstr "Efternavn"
 
 #. module: partner_firstname
 #: code:addons/partner_firstname/exceptions.py:23

@@ -18,10 +18,10 @@
 
             <xpath expr="//field[@name='email']" position="after">
                 <group>
-                    <field name="lastname"
-                           attrs="{'required': [('firstname', '=', False)]}"/>
                     <field name="firstname"
                            attrs="{'required': [('lastname', '=', False)]}"/>
+                    <field name="lastname"
+                           attrs="{'required': [('firstname', '=', False)]}"/>
                 </group>
             </xpath>
         </data>
