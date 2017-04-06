@@ -17,6 +17,8 @@ class ResPartner(models.Model):
     """Adds last name and first name; name becomes a stored function field."""
 
     _inherit = 'res.partner'
+    
+    _names_order_cache = 'init'
 
     firstname = fields.Char("First name")
     lastname = fields.Char("Last name")
@@ -87,8 +89,9 @@ class ResPartner(models.Model):
         You can override this method to read configuration from language,
         country, company or other
         """
-        return self.env['ir.config_parameter'].get_param(
-            'partner_names_order', self._names_order_default())
+        if ResPartner._names_order_cache == 'init':
+            ResPartner._names_order_cache = self.env['ir.config_parameter'].get_param('partner_names_order', self._names_order_default())
+        return ResPartner._names_order_cache
 
     @api.model
     def _get_computed_name(self, lastname, firstname):
