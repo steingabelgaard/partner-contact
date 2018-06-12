@@ -181,12 +181,14 @@ class ResPartner(models.Model):
 
     @api.one
     def _inverse_name(self):
-        """Try to revert the effect of :meth:`._compute_name`."""
-        parts = self._get_inverse_name(self.name, self.is_company)
-        if parts["lastname"] != self.lastname:
-            self.lastname = parts["lastname"]
-        if parts["firstname"] != self.firstname:
-            self.firstname = parts["firstname"]
+        
+        if self.name != self._get_computed_name(self.lastname, self.firstname) or not self.lastname or not self.firstname: 
+            """Try to revert the effect of :meth:`._compute_name`."""
+            parts = self._get_inverse_name(self.name, self.is_company)
+            if parts["lastname"] != self.lastname:
+                self.lastname = parts["lastname"]
+            if parts["firstname"] != self.firstname:
+                self.firstname = parts["firstname"]
 
     @api.one
     @api.constrains("firstname", "lastname")

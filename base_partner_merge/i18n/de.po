@@ -3,15 +3,15 @@
 # * base_partner_merge
 # 
 # Translators:
-# Rudolf Schnapka <rs@techno-flex.de>, 2015
+# Rudolf Schnapka <rs@techno-flex.de>, 2015,2017
 # Thomas A. Jaeger, 2015
-# Thomas A. Jaeger, 2015
+# Renzo Meister, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: partner-contact (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-25 01:50+0000\n"
-"PO-Revision-Date: 2015-11-25 11:07+0000\n"
+"POT-Creation-Date: 2017-06-01 03:22+0000\n"
+"PO-Revision-Date: 2017-02-24 23:38+0000\n"
 "Last-Translator: Rudolf Schnapka <rs@techno-flex.de>\n"
 "Language-Team: German (http://www.transifex.com/oca/OCA-partner-contact-8-0/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgid "A user associated to the contact"
 msgstr "Ein dem Kontakt zugeordneter Anwender"
 
 #. module: base_partner_merge
-#: code:addons/base_partner_merge/base_partner_merge.py:350
+#: code:addons/base_partner_merge/base_partner_merge.py:370
 #, python-format
 msgid ""
 "All contacts must have the same email. Only the Administrator can merge "
@@ -103,15 +103,21 @@ msgid "Destination Contact"
 msgstr "Zielkontakt"
 
 #. module: base_partner_merge
+#: field:base.partner.merge.automatic.wizard,display_name:0
+#: field:base.partner.merge.line,display_name:0
+msgid "Display Name"
+msgstr "Anzeigebezeichnung"
+
+#. module: base_partner_merge
 #: field:base.partner.merge.automatic.wizard,group_by_email:0
 msgid "Email"
 msgstr "Email"
 
 #. module: base_partner_merge
-#: code:addons/base_partner_merge/base_partner_merge.py:339
-#: code:addons/base_partner_merge/base_partner_merge.py:349
-#: code:addons/base_partner_merge/base_partner_merge.py:374
-#: code:addons/base_partner_merge/base_partner_merge.py:510
+#: code:addons/base_partner_merge/base_partner_merge.py:359
+#: code:addons/base_partner_merge/base_partner_merge.py:369
+#: code:addons/base_partner_merge/base_partner_merge.py:394
+#: code:addons/base_partner_merge/base_partner_merge.py:530
 #, python-format
 msgid "Error"
 msgstr "Fehler"
@@ -127,7 +133,7 @@ msgid "Finished"
 msgstr "erledigt"
 
 #. module: base_partner_merge
-#: code:addons/base_partner_merge/base_partner_merge.py:340
+#: code:addons/base_partner_merge/base_partner_merge.py:360
 #, python-format
 msgid ""
 "For safety reasons, you cannot merge more than 3 contacts together. You can "
@@ -159,6 +165,12 @@ msgstr "Ist ein Unternehmen"
 #: field:base.partner.merge.automatic.wizard,exclude_journal_item:0
 msgid "Journal Items associated to the contact"
 msgstr "Mit dem Vertrag verbundene Journaleinträge "
+
+#. module: base_partner_merge
+#: field:base.partner.merge.automatic.wizard,__last_update:0
+#: field:base.partner.merge.line,__last_update:0
+msgid "Last Modified on"
+msgstr "Zuletzt verändert am"
 
 #. module: base_partner_merge
 #: field:base.partner.merge.automatic.wizard,write_uid:0
@@ -208,7 +220,7 @@ msgid "Merge with Manual Check"
 msgstr "Zusammenführen nach manueller Prüfung"
 
 #. module: base_partner_merge
-#: code:addons/base_partner_merge/base_partner_merge.py:391
+#: code:addons/base_partner_merge/base_partner_merge.py:411
 #, python-format
 msgid "Merged with the following partners:"
 msgstr "Mit folgenden Partner zusammengeführt:"
@@ -224,7 +236,7 @@ msgid "Name"
 msgstr "Name"
 
 #. module: base_partner_merge
-#: code:addons/base_partner_merge/base_partner_merge.py:375
+#: code:addons/base_partner_merge/base_partner_merge.py:395
 #, python-format
 msgid ""
 "Only the destination contact may be linked to existing Journal Items. Please"
@@ -311,7 +323,7 @@ msgid "Wizard"
 msgstr "Assistent"
 
 #. module: base_partner_merge
-#: code:addons/base_partner_merge/base_partner_merge.py:511
+#: code:addons/base_partner_merge/base_partner_merge.py:531
 #, python-format
 msgid "You have to specify a filter for your selection"
 msgstr "Sie müssen einen Filter für Ihre Auswahl angeben"
