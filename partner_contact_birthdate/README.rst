@@ -13,10 +13,6 @@ Installation
 
 To install this module, you need to:
 
-* Ensure that the current contents of the *birthdate* field in the
-  *res.partner* model in your database are empty or in a format easily readable
-  by the python function strptime_ in case you want this module to
-  automatically convert those to the new format.
 * Install the OCA repository `partner-contact`_.
 * Update your modules list.
 * Search and install this module.
