@@ -1,13 +1,12 @@
-# Copyright (C) 2014-2015  Grupo ESOC <www.grupoesoc.es>
-# © 2017-Apertoso N.V. (<http://www.apertoso.be>)
-# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
-
+# Copyright 2014-2015 Grupo ESOC <www.grupoesoc.es>
+# Copyright 2017-Apertoso N.V. (<http://www.apertoso.be>)
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 {
     "name": "Contact gender",
     "summary": "Add gender field to contacts",
     'version': '11.0.1.0.0',
     "category": "Customer Relationship Management",
-    "website": "https://www.tecnativa.com/",
+    "website": "https://github.com/oca/partner-contact",
     "author": "Grupo ESOC, Tecnativa, Odoo Community Association (OCA)",
     "contributors": [
         'Jairo Llopis <j.llopis@grupoesoc.es>',
