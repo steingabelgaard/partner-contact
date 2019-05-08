@@ -88,7 +88,9 @@ class ResPartner(models.Model):
         # Visible field determines wether first field will be visible.
         # This is because domains on many2many no longer work in 9.0
         # and above.
-        visible_field = fields.Boolean(compute='_compute_tabs_visibility')
+        visible_field = fields.Boolean(compute='_compute_tabs_visibility',
+                                       exportable=False,
+                                       selectable=False)
         self._add_field(tab.get_visible_fieldname(), visible_field)
         if visible_field not in self._field_computed:
             self._field_computed[visible_field] = [visible_field]
