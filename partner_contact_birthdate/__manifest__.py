@@ -1,5 +1,5 @@
 # Copyright 2014-2015  Grupo ESOC <www.grupoesoc.es>
-# Copyright 2017-Apertoso N.V. (<http://www.apertoso.be>)
+# © 2017-Apertoso N.V. (<http://www.apertoso.be>)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 {
@@ -8,9 +8,9 @@
     "author": "Tecnativa,"
               "Odoo Community Association (OCA)",
     "category": "Customer Relationship Management",
-    "website": "https://www.tecnativa.com/",
+    "website": "https://github.com/OCA/partner-contact",
     "depends": [
-        "partner_contact_personal_information_page",
+        "base",
     ],
     "data": [
         "views/res_partner.xml",

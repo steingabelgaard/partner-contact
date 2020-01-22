@@ -25,6 +25,11 @@ msgid "Birthdate"
 msgstr "Fødselsdato"
 
 #. module: partner_contact_birthdate
+#: model:ir.model,name:partner_contact_birthdate.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: partner_contact_birthdate
 #: code:addons/partner_contact_birthdate/models/res_partner.py:37
 #, python-format
 msgid ""

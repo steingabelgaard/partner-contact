@@ -29,20 +29,12 @@ To use this module, you need to:
 
 * Edit or create a partner.
 * Ensure it is **not** a company.
-* Go to the *Personal Information* sheet.
 * Set the birthdate there.
 
 For further information, please visit:
 
 * https://www.odoo.com/forum/help-1
 * https://github.com/OCA/partner-contact/
-
-Known issues / Roadmap
-======================
-
-* If you have data in your *res.partner* records' *birthdate* field that cannot
-  be converted to date by Pyhton's strptime_ function, those records will have
-  an empty *birthdate_date* after install.
 
 Credits
 =======
@@ -73,4 +65,3 @@ To contribute to this module, please visit http://odoo-community.org.
 
 
 .. _partner-contact: https://github.com/OCA/partner-contact/
-.. _strptime: https://docs.python.org/2/library/datetime.html#datetime.datetime.strptime
